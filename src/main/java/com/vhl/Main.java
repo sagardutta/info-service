@@ -25,7 +25,7 @@ public class Main {
         // in com.vhl package
         final ResourceConfig rc = new ResourceConfig().packages("com.vhl.resource");
         rc.register(JacksonFeature.class);
-        
+
         // create and start a new instance of grizzly http server
         // exposing the Jersey application at BASE_URI
         return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
